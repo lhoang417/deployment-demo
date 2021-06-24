@@ -8,7 +8,7 @@
   <title>Heroku Test</title>
   <style>
     body {
-  background: rgb(141, 140, 140);
+  background: #edefe7;
   margin: 1rem;
   padding: 1rem;
   max-width: 600px;
@@ -27,11 +27,14 @@ ol {
 
 }
 button {
-	color: rgb(32, 6, 182);
-  background-color: gray;
+	color: white;
+  background-color: #98967c;
   font-size:30px;
   font-style: oblique;
-  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.75);
+}
+button:hover{
+  background-color: #252834;
 }
 input {
 	display: block;
@@ -39,12 +42,13 @@ input {
 img {
   max-height: 300px;
 	max-width: 450px;
-  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
 }
 .header1 { 
   position:relative;
+  background-color: rgb(224, 224, 224);
   font-size:40px;
-  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
 }
   </style>
 </head>
@@ -75,7 +79,7 @@ img {
     }
     document.getElementById('profile').onclick = function(){
 
-       document.getElementById('first').innerHTML = '<h1>Linh Hoang</h1>' + '<img src = https://lh3.googleusercontent.com/ygwBOEQq_imwumTmeUPxESQ-2SbLc0xVQDv4NuNSwC5OVKE-IDaXIL1kWJpC5Dhjn7bdcY8aYOXRuD8qCmUfzFS4YEweD7p8Sjc7Cv4HM3_ZPO013WkFoXlMxhbNWoAXPqgcr0sgtflY1tdR_EwTFLIYo6Ztl9TZBVoKgX49p-0O9BNBwFK1pIaVJTcuizTxJ5B1Akke5yHi-llF_dq1Mv31oln9QCiIXoyM84OTAtww6CUDXoXGYGlq5hFYdfOK0CktWyNkwUr1L0N7C8nOdMM-7Jo4eyUaIMRupiRCKpGUCJpIj8fOAD9vzPf0wcViUsQOF6eVo2fHAgFq9r2AcPp0ZvRP6iVvCCgXOfq81gPqYetecA7LaoqfDPUa6XTC2TPm6uGA761ZuY0aBHZRQJ3jJi_2ucw-1DhJY_8kB6yGuCfz2G-xwNYkSIU367Pe2wNog6KLwu-j6va3sus_ngEQysWuChmV9gLEUv3AgO2-YuH0J-kAwQxRY_tDiOvuuHNvw6eYKK_QBvljf-i1KXglHLqSbhkMj0sNMLsamTNClBWkIsifA3CJILgJYlRKqvMh4K5Tq6GJ7mPAhMWJdQ-jWBVtWIzbHBNRM6p1vTaZUpzsd09aWVnyCvlJ2fHSvwE6ZAlWQ5xGDsC_Vx0bH1IUP9yAaqFdCrM7vZ3PKE7gLsOLX8mLPW-p_YWHjPrlJrYjd9JusBXcxp5Dm5glB-uI=w1064-h708-no?authuser=0/>'
+       document.getElementById('first').innerHTML = '<h1>Linh Hoang</h1>' + '<img src = https://media-exp1.licdn.com/dms/image/C5603AQHrk1ICT3Ji6Q/profile-displayphoto-shrink_400_400/0/1622997039011?e=1629936000&amp;v=beta&amp;t=xeB_NY4d1izkDs5GDbzQlnD05hKncqWWY11lLulcI1I>'
 
     }
     document.getElementById('bio').onclick = function(){
@@ -86,7 +90,7 @@ img {
     }
     document.getElementById('motivation').onclick = function(){
 
-      document.getElementById('first').innerHTML = "<h1>Providing for these two girls</h1>" + '<img src = https://lh3.googleusercontent.com/THiRro3W_HQxZ2UODmqPXguR0xD3-LcCeIcN3Sg8rRA_csmcx5z76vhCO-JUc-xDKx3-7klyScWc6a7KqkW1gYeyV2iY2y_T5_hJpyziyZw-2QLPpCDtkv486ygTEsRorRMOJzCoyxaASzm0IdEFnn_O_qj8yrU3E2cq_E-reoO_Cf-yL1iHZposvkRUOZXAF6Z2hatPeoohZSFT_emsFHyrRD6PKvtp8nsPnL12T_pHxNqAWMvbfEbyni2yZQfBMMUfDQNLdYFOpfXYbXDcEeTnxmSIZxJ-zkrNNC0qCIZOyYmlBM1d5LvJmyAe0pVe3a7OcjSrgPzdQNxIqNnqPx9sYiyDIoYUYSuVGoor8dKmZp5eHWzSb2tMzjmrOQnTCoyyVWtKbAOfiY3Veg4asSzRcvW4nm95WevdZhfGIJHQHC9-wDpaQZr-S4eg_K45Xk6aunywBWGYRhssBfR2qi7gJr2qTuclR2jtmyZpvF6SwW1Q1bxQN1-_WkCa6zGJX4mZ6psXUmSPQmI89ss0IYs21e52ExXSD2jEYDCAH02piBjP2iPTSx0Z8TA4w3KrpOaR8qcKnQMXOHeOsyaj8x2YbphL4o8hXaEV-1mxqku6nx8lS0caMeNPkXM3jBvp332HKjpIzp4S6xcT87YHhfJ2uj1wiZHtwMhQX_FR3OtgZoho_xhL_LSCMDhZk44czu0GLE7PhI2WQKnfuuumZsxV=w588-h783-no?authuser=0>'
+      document.getElementById('first').innerHTML = "<h1>Staying motivated so I can provide for my family.</h1>" + '<img src = https://www.eoi.es/blogs/imsd/files/2015/05/Motivation1.jpg>'
 
     }
   </script>
