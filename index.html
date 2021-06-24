@@ -4,15 +4,92 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='stylesheet' href='styles.css'>
-  <title>Heroku Test</title>
-</head>
-<body><center>
-  
-  <h1>This is my heroku deployment!!!</h1>
-  <br>
-  <img src = "https://i.pinimg.com/originals/25/d8/7d/25d87de07c531ea3f6a95c1aeaab07b4.gif" width="250">
 
-</center>
+  <title>Heroku Test</title>
+  <style>
+    body {
+  background: rgb(141, 140, 140);
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  font-family: "Open Sans", sans-serif;
+}
+nav {
+	border-bottom: 4px solid rgb(48, 105, 131);
+}
+ol {
+	padding-left: 0;
+}
+.crumb {
+	margin-right: 2em;
+	display: inline;
+
+}
+button {
+	color: rgb(32, 6, 182);
+  background-color: gray;
+  font-size:30px;
+  font-style: oblique;
+  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.75);
+}
+input {
+	display: block;
+}
+img {
+  max-height: 300px;
+	max-width: 450px;
+  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.75);
+}
+.header1 { 
+  position:relative;
+  font-size:40px;
+  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.75);
+}
+  </style>
+</head>
+<body>
+  <div class="header1"><h1>LINH'S PAGE</h1></div>
+  <nav>
+		<ol>
+          <li class="crumb"><button id="home">Home</button></li>
+	        <li class="crumb"><button id="profile">Profile</button></li>
+	        <li class="crumb"><button id="bio">Bio</button></li>
+	        <li class="crumb"><button id="motivation">Motivation</button></li>
+	    </ol>
+	</nav>
+
+	<content>
+	    <section id='first'>
+        <br><h1>Thanks for visiting my very first page.<br>I hope you enjoy!<br>You're awesome!</h1>
+        <img src="https://thumbs.gfycat.com/BlandGloomyAntelopegroundsquirrel-max-1mb.gif">
+        
+
+      </section>
+
+  </center> 
+ 
+  <script>
+    document.getElementById('home').onclick = function (){
+       document.getElementById('first').innerHTML = '<br><h1>Thank you for visiting my page.<br>Please come back and visit anytime!<br>Have a good day!<br>Here is a cookie!</h1>' + '<<img src="https://www.irishnews.com/picturesarchive/irishnews/irishnews/2017/07/21/132013632-5283a721-8e7b-49a6-b915-a594547f51af.jpg">'
+    }
+    document.getElementById('profile').onclick = function(){
+
+       document.getElementById('first').innerHTML = '<h1>Linh Hoang</h1>' + '<img src = https://lh3.googleusercontent.com/ygwBOEQq_imwumTmeUPxESQ-2SbLc0xVQDv4NuNSwC5OVKE-IDaXIL1kWJpC5Dhjn7bdcY8aYOXRuD8qCmUfzFS4YEweD7p8Sjc7Cv4HM3_ZPO013WkFoXlMxhbNWoAXPqgcr0sgtflY1tdR_EwTFLIYo6Ztl9TZBVoKgX49p-0O9BNBwFK1pIaVJTcuizTxJ5B1Akke5yHi-llF_dq1Mv31oln9QCiIXoyM84OTAtww6CUDXoXGYGlq5hFYdfOK0CktWyNkwUr1L0N7C8nOdMM-7Jo4eyUaIMRupiRCKpGUCJpIj8fOAD9vzPf0wcViUsQOF6eVo2fHAgFq9r2AcPp0ZvRP6iVvCCgXOfq81gPqYetecA7LaoqfDPUa6XTC2TPm6uGA761ZuY0aBHZRQJ3jJi_2ucw-1DhJY_8kB6yGuCfz2G-xwNYkSIU367Pe2wNog6KLwu-j6va3sus_ngEQysWuChmV9gLEUv3AgO2-YuH0J-kAwQxRY_tDiOvuuHNvw6eYKK_QBvljf-i1KXglHLqSbhkMj0sNMLsamTNClBWkIsifA3CJILgJYlRKqvMh4K5Tq6GJ7mPAhMWJdQ-jWBVtWIzbHBNRM6p1vTaZUpzsd09aWVnyCvlJ2fHSvwE6ZAlWQ5xGDsC_Vx0bH1IUP9yAaqFdCrM7vZ3PKE7gLsOLX8mLPW-p_YWHjPrlJrYjd9JusBXcxp5Dm5glB-uI=w1064-h708-no?authuser=0/>'
+
+    }
+    document.getElementById('bio').onclick = function(){
+
+      document.getElementById('first').innerHTML = "<br><h1>'Dedicated and goal-oriented with the drive to exceed expectations. Demonstrated ability in providing excellent Customer Service while building rapport and strong relationships. A self-motivated team player that demonstrates initiative, communication skills and the ability to quickly grasp and apply new information. Looking forward to developing a career as a Programmer upon graduation from DevMountain.'</h1>"
+
+
+    }
+    document.getElementById('motivation').onclick = function(){
+
+      document.getElementById('first').innerHTML = "<h1>Providing for these two girls</h1>" + '<img src = https://lh3.googleusercontent.com/THiRro3W_HQxZ2UODmqPXguR0xD3-LcCeIcN3Sg8rRA_csmcx5z76vhCO-JUc-xDKx3-7klyScWc6a7KqkW1gYeyV2iY2y_T5_hJpyziyZw-2QLPpCDtkv486ygTEsRorRMOJzCoyxaASzm0IdEFnn_O_qj8yrU3E2cq_E-reoO_Cf-yL1iHZposvkRUOZXAF6Z2hatPeoohZSFT_emsFHyrRD6PKvtp8nsPnL12T_pHxNqAWMvbfEbyni2yZQfBMMUfDQNLdYFOpfXYbXDcEeTnxmSIZxJ-zkrNNC0qCIZOyYmlBM1d5LvJmyAe0pVe3a7OcjSrgPzdQNxIqNnqPx9sYiyDIoYUYSuVGoor8dKmZp5eHWzSb2tMzjmrOQnTCoyyVWtKbAOfiY3Veg4asSzRcvW4nm95WevdZhfGIJHQHC9-wDpaQZr-S4eg_K45Xk6aunywBWGYRhssBfR2qi7gJr2qTuclR2jtmyZpvF6SwW1Q1bxQN1-_WkCa6zGJX4mZ6psXUmSPQmI89ss0IYs21e52ExXSD2jEYDCAH02piBjP2iPTSx0Z8TA4w3KrpOaR8qcKnQMXOHeOsyaj8x2YbphL4o8hXaEV-1mxqku6nx8lS0caMeNPkXM3jBvp332HKjpIzp4S6xcT87YHhfJ2uj1wiZHtwMhQX_FR3OtgZoho_xhL_LSCMDhZk44czu0GLE7PhI2WQKnfuuumZsxV=w588-h783-no?authuser=0>'
+
+    }
+  </script>
+
 </body>
 </html>
